@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD APP</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/design.css">
+    <script src="scripts/utils/config.js"></script>
+    <script src="./scripts/model/task.js"></script>
+    <script src="./scripts/model/taskoperations.js"></script>
+    <script src="./scripts/controller.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="alert-info text-center">TO DO APP</h1>
+        <div class="form-group">
+            <label for="">Id</label>
+            <input type="text" class="form-control" id="taskid" placeholder="write your id here">
+        </div>
+        <div class="form-group">
+            <label for="">Name</label>
+            <input type="text" class="form-control" id="taskname" placeholder="write your name here">
+        </div>
+        <div class="form-group">
+            <label for="">Description</label>
+            <textarea class="form-control" id="descr" cols="30" rows="10"
+                placeholder="type your description here"></textarea>
+        </div>
+        <div class="form-group">
+            <button id="add" class="btn btn-outline-primary">ADD</button>
+            <button class="btn btn-outline-primary">DELETE</button>
+            <button class="btn btn-outline-primary">SEARCH</button>
+            <button class="btn btn-outline-primary">UPDATE</button>
+            <button class="btn btn-outline-primary">SAVE</button>
+            <button class="btn btn-outline-primary">SAVE TO LOCAL</button>
+            <button class="btn btn-outline-primary">LOAD LOCAL</button>
+            <button class="btn btn-outline-primary">LOAD SERVER</button>
+            <button class="btn btn-outline-primary">SORT</button>
+            <button class="btn btn-outline-primary">CLEAR ALL</button>
+        </div>
+        <div>
+            <h3>Total records are Mark records are Unmark records are</h3>
+        </div>
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Operations</th>
+                </tr>
+            </thead>
+            <tbody id="tasks">
+
+            </tbody>
+            </tabble>
+    </div>
+</body>
+
+</html>
